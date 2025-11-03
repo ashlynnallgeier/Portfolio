@@ -545,5 +545,17 @@ footer a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.video-embed {
+    width: 100%;
+    max-width: 3840px; /* ensures it never exceeds 4K */
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
 
 
