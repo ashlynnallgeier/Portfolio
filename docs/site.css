@@ -556,6 +556,22 @@ footer a:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.resource-list li {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+.resource-list a {
+    color: var(--accent-color, #6d8fb3);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 
