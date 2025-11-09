@@ -28,7 +28,7 @@ body {
 }
 
 .navbar .logo-img {
-    height: 120px; /* shrink logo */
+    height: 120px; 
 }
 
 
@@ -183,7 +183,7 @@ footer a:hover {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); 
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -199,9 +199,11 @@ footer a:hover {
 
 .gallery-grid img {
     width: 100%;
-    height: auto;
+    height: 250px; 
+    object-fit: cover; 
+    object-position: center top; 
     display: block;
-    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
@@ -216,6 +218,31 @@ footer a:hover {
     text-align: center;
     background: #f9fafb;
 }
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid img {
+        height: 200px; 
+    }
+}
+
+.gallery-grid img.portrait1 {
+    object-position: center;
+}
+
+.gallery-grid img.portrait2 {
+    object-position: center center;
+}
+
+
 
 .lightbox {
     display: none;
@@ -356,7 +383,6 @@ footer a:hover {
     }
 
 
-/* CONTACT PAGE STYLING */
 .contact-content {
     max-width: 700px;
     margin: 4rem auto;
@@ -440,6 +466,78 @@ footer a:hover {
     margin-top: 1.5rem;
     font-weight: 500;
 }
+
+.contact-info {
+    max-width: 700px;
+    margin: 2rem auto 3rem auto;
+    padding: 1.5rem 2rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.8rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.05rem;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #478A6C;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #93C8B0;
+    text-decoration: underline;
+}
+
+.contact-info .social-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.contact-info .social-links li {
+    display: inline-block;
+    margin-right: 1.2rem;
+    font-size: 1rem;
+}
+.social-buttons {
+    display: flex;           
+    justify-content: center; 
+    gap: 20px;               
+    flex-wrap: wrap;         
+    margin-top: 1rem;
+}
+
+
+.social-buttons a {
+    display: inline-block;   
+    transition: transform 0.2s;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);   
+}
+
+.social-buttons a img {
+    width: 120px;        
+    height: 120px;
+    object-fit: contain;   
+    display: block;
+}
+
+
+
 .about-photo {
     text-align: center;
     margin: 2rem 0;
@@ -681,7 +779,57 @@ footer a:hover {
     line-height: 1.5;
 }
 
+/* Only style engagement gallery images */
+.engagement-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
 
+.engagement-gallery .gallery-grid figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 150%; 
+    margin: 0;
+    border-radius: 8px;
+    background: #f5f5f5; 
+}
+
+.engagement-gallery .gallery-grid img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.engagement-gallery .gallery-grid img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.engagement-gallery .gallery-grid figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.engagement-gallery .gallery-grid figure:hover figcaption {
+    opacity: 1;
+}
 
 
 

@@ -19,3 +19,5 @@ function changeImage(direction) {
     if (currentImage >= images.length) currentImage = images.length - 1 ? 0 : currentImage;
     document.getElementById("lightbox-img").src = images[currentImage].src;
 }
+
+
