@@ -877,6 +877,19 @@ footer a:hover {
 }
 
 
+.movie-poster {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.poster-img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
 
 
 
