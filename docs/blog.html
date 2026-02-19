@@ -3,38 +3,122 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blog | Ashlynn Allgeier</title>
+        <title>Internship Blog | Ashlynn Allgeier</title>
         
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-                    <link rel="icon" type="image/png" href="images/favicon.png">
-                        <link rel="stylesheet" href="site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Open+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="site.css" />
         <script src="script.js" defer></script>
     </head>
     
     <body>
         <div id="site-header"></div>
         
-        <main class="page-content">
-            <h1>Blog</h1>
-            <div class="subtitle">Updates, reflections, and creative projects in progress.</div>
-            
-            <section class="blog-coming-soon">
-                <p>
-                    This page will feature future blog posts, creative notes, and behind-the-scenes updates.
-                    Check back soon for new content as projects develop.
+        <main class="page-content blog-index">
+            <section class="intro">
+                <h1>Internship Blog</h1>
+                <p class="subtitle">
+                    <em>Weekly facCOMMS internship reports, meeting notes, and ongoing Media Team / communications progress.</em>
                 </p>
             </section>
+            
+            <!-- ===================== -->
+            <!-- Recent Posts (Boxed)  -->
+            <!-- ===================== -->
+            
+            <section class="content">
+                <h2>Recent Posts</h2>
+                
+                <div class="blog-grid">
+                    
+                    <article class="blog-card">
+                        <p class="blog-meta">Feb 16–22, 2026</p>
+                        <h3 class="blog-title">
+                            <a href="weekly-report-2026-02-18.html">
+                                Weekly Internship Report (Feb 18, 2026)
+                            </a>
+                        </h3>
+                        <p class="blog-desc">
+                            Social media engagement growth, Missions Week livestream plan,
+                            Easter hallway photo wall concept, PR form cleanup,
+                            and a finalized posting schedule.
+                        </p>
+                        <a class="blog-link" href="weekly-report-2026-02-18.html">
+                            Read post →
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <p class="blog-meta">Feb 9–15, 2026</p>
+                        <h3 class="blog-title">
+                            <a href="weekly-report-2026-02-11.html">
+                                Weekly Internship Report (Feb 11, 2026)
+                            </a>
+                        </h3>
+                        <p class="blog-desc">
+                            Promotions scheduling, OpusClip sermon reel rollout,
+                            Media Team planning, and first-round Easter graphics.
+                        </p>
+                        <a class="blog-link" href="weekly-report-2026-02-11.html">
+                            Read post →
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <p class="blog-meta">Feb 1–6, 2026</p>
+                        <h3 class="blog-title">
+                            <a href="weekly-report-2026-02-04.html">
+                                Weekly Internship Report (Feb 4, 2026)
+                            </a>
+                        </h3>
+                        <p class="blog-desc">
+                            Event planning, Media Team recruitment structure,
+                            equipment research, and early website ideas.
+                        </p>
+                        <a class="blog-link" href="weekly-report-2026-02-04.html">
+                            Read post →
+                        </a>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <!-- ===================== -->
+            <!-- Archive Section       -->
+            <!-- ===================== -->
+            
+            <section class="content">
+                <h2>All Posts</h2>
+                
+                <ul class="resource-list">
+                    <li>
+                        <strong>Feb 18, 2026:</strong>
+                        <a href="weekly-report-2026-02-18.html">
+                            Weekly Internship Report (Feb 16–22, 2026)
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Feb 11, 2026:</strong>
+                        <a href="weekly-report-2026-02-11.html">
+                            Weekly Internship Report (Feb 9–15, 2026)
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Feb 4, 2026:</strong>
+                        <a href="weekly-report-2026-02-04.html">
+                            Weekly Internship Report (Feb 1–6, 2026)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            
         </main>
         
-        
-        <footer>
-            <p>
-                © 2025 Ashlynn Allgeier •
-                <a href="https://ashlynnallgeier.github.io/DIGIT100/" target="_blank" rel="noopener">Portfolio Source</a> •
-                Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">CC BY-ND 4.0</a>
-            </p>
-        </footer>
+        <div id="site-footer"></div>
     </body>
 </html>
